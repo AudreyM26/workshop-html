@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Formulaire de contact</title>
+</head>
+<body>
+    <h1>La Florentina</h1>
+    <h2>Pizzeria</h2>
+    <nav>
+        <ul>
+            <li><a href="index.html" >Accueil</a></li>
+            <li><a href="liste_pizzas.html" >Nos pizzas</a></li>
+            <li><a href="#" >Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+    <h3>Nous contacter</h3>
+    <form action="https://audreym26.github.io/workshop-html/send_contact" method="post">
+        <p>
+            <label for="nom">Nom</label>
+            <input type="text" name="nom" id="nom"/>
+        </p>
+
+        <p>
+            <label for="prenom">Prénom</label>
+            <input type="text" name="prenom" id="prenom"/>
+        </p>
+
+        <p>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email"/>
+        </p>
+
+        <p>
+            <label for="telephone">Téléphone</label>
+            <input type="tel" name="text" id="telephone"/>
+        </p>
+        <p>
+            <label for="canal">Canal de contact préféré</label>
+            <select name="canal" id="canal">
+                <option value="email">Email</option>
+                <option value="telephone">Téléphone</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="message">Message</label>
+            <textarea rows="10" cols="20" name="message" id="message"></textarea>
+        </p>
+        <button type="submit">Valider</button>
+    </form>
+    </main>
+</body>
+</html>
