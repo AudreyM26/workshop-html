@@ -16,38 +16,40 @@
     <main>
     <h3>Nous contacter</h3>
     <form action="https://audreym26.github.io/workshop-html/send_contact" method="post">
-        <p>
-            <label for="nom">Nom</label>
-            <input type="text" name="nom" id="nom"/>
-        </p>
+        <table cellspacing="10">
+            <tr>
+                <td><label for="nom">Nom</label></td>
+                <td><input type="text" name="nom" id="nom"/></td>
+            </tr>
+            <tr>
+                <td><label for="prenom">Prénom</label></td>
+                <td><input type="text" name="prenom" id="prenom"/></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="email" name="email" id="email"/></td>
+            </tr>
+            <tr>
+                <td><label for="telephone">Téléphone</label></td>
+                <td><input type="tel" name="text" id="telephone"/></td>
+            </tr>
+            <tr>
+                <td><label for="canal">Canal de contact préféré</label></td>
+                <td><select name="canal" id="canal">
+                    <option value="email">Email</option>
+                    <option value="telephone">Téléphone</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td valign="top"><label for="message">Message</label></td>
+                <td><textarea rows="10" cols="20" name="message" id="message"></textarea></td>
+            </tr>
 
-        <p>
-            <label for="prenom">Prénom</label>
-            <input type="text" name="prenom" id="prenom"/>
-        </p>
+            <tr>
+                <td colspan="2" align="center"><button type="submit">Valider</button></td>
+            </tr>
+        </table>
 
-        <p>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email"/>
-        </p>
-
-        <p>
-            <label for="telephone">Téléphone</label>
-            <input type="tel" name="text" id="telephone"/>
-        </p>
-        <p>
-            <label for="canal">Canal de contact préféré</label>
-            <select name="canal" id="canal">
-                <option value="email">Email</option>
-                <option value="telephone">Téléphone</option>
-            </select>
-        </p>
-
-        <p>
-            <label for="message">Message</label>
-            <textarea rows="10" cols="20" name="message" id="message"></textarea>
-        </p>
-        <button type="submit">Valider</button>
     </form>
     </main>
 </body>
